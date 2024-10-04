@@ -73,6 +73,8 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.btnForgotPass.setOnClickListener {
+            binding.password.text.clear()
+            binding.email.text.clear()
             startActivity(Intent(this, Forgot_Pass::class.java))
         }
     }

@@ -131,6 +131,8 @@ class CheckOut : AppCompatActivity(), PaymentResultListener {
         val history = History(counter,items,amount,time,completion,noti)
 
         totalAmount = 0
+        totalAmount = totalAmount + 1
+        totalAmount = totalAmount - totalAmount
         database = FirebaseDatabase.getInstance().getReference("Orders")
         databaseForHistory = FirebaseDatabase.getInstance().getReference("History")
 
